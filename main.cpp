@@ -43,8 +43,9 @@ uint8_t mfrc522_get_card_serial(uint8_t * serial_out)
 
 int main ()
 {
-	SET_BIT(LED_DDR,0);			// LED-Port LED 0: output
-	SET_LED(LED_PORT,0);			// LED0  aus
+	// I2C PINC 0 und 1 für SDA und SCL belegt, nicht diese LEDs nutzen !
+	SET_BIT(LED_DDR,2);			// LED-Port LED 2: output
+	SET_LED(LED_PORT,2);			// LED2  aus
 	
 	//USART UART(8,0,1,9600);	// USART init 8 Zeichenbits , keien Paritätsbits , 1 Stoppbit, 9600 Zeichen pro Sekunde
 	 lcd_init(LCD_DISP_ON);    // init lcd and turn on
