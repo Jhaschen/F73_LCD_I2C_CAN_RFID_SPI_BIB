@@ -60,7 +60,7 @@ extern "C" {
     /* TODO: define displaycontroller */
 #define SSD1306                // SH1106 or SSD1306, check datasheet of your display
     /* TODO: define displaymode */
-#define GRAPHICMODE               // TEXTMODE for only text to display,
+#define TEXTMODE              // TEXTMODE for only text to display,
     // GRAPHICMODE for text and graphic
     /* TODO: define font */
 #define FONT            ssd1306oled_font// set font here, refer font-name at font.h/font.c
